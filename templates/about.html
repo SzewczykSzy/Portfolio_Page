@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="{{ url_for('home') }}"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-white">
+                    <span class="fs-4">Simon's Portfolio</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#scrollHeading_1" class="nav-link text-white">About Me</a></li>
+                    <li class="nav-item"><a href="#scrollHeading_2" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="#scrollHeading_3" class="nav-link text-white">Skills</a></li>
+                    <li class="nav-item"><a href="#"><button type="button" class="btn btn-outline-light">CV</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <footer class="py-3 my-4">
+        <p class="text-center text-body-secondary">© 2023 Copyright by Szymon</p>
+    </footer>
+
+</body>
+
+</html>
