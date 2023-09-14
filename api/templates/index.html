@@ -11,7 +11,11 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <style>
+        #about_section {
+            background-image: url("../static/img/bg_about.png");
 
+            /* background-color: red; */
+        }
     </style>
 </head>
 
@@ -27,33 +31,37 @@
                     <li class="nav-item"><a href="#scrollHeading_1" class="nav-link text-white">About Me</a></li>
                     <li class="nav-item"><a href="#scrollHeading_2" class="nav-link text-white">Projects</a></li>
                     <li class="nav-item"><a href="#scrollHeading_3" class="nav-link text-white">Skills</a></li>
+                    <li class="nav-item"><a href="#scrollHeading_4" class="nav-link text-white">Links</a></li>
                     <li class="nav-item"><a href="#"><button type="button" class="btn btn-outline-light">CV</button></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <h2 id="scrollHeading_1"></h2>
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="../static/img/port_os.jpg" class="d-block img-fluid rounded shadow" alt="My photo" width="350"
-                    loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <h2 class="display-5 fw-bold text-center">About</h2>
-                <hr>
-                <h3 class="text-center">My development path</h3>
-                <p class="text-center">I started learning programming in 2020 when I had few programming
-                    course on my field of study - Automatics Control and Robotics. At the start I wasn't entirely
-                    convinced about programming
-                    but month to month I started to like it. As a result I started coding on my own and Nowdays Python
-                    is my main
-                    programming language.</p>
-                <h3 class="text-center">Hobby</h3>
-                <p class="text-center">My main hobby is rollerblading. My max distance covered by rollerblades is 100 km
-                </p>
-                <p class="text-center"><a href="{{url_for('about')}}">Read more about me...</a></p>
+    <div id="about_section">
+        <div class="container col-xxl-8 px-4 py-5" id="scrollHeading_1">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6 text-center">
+                    <img src="../static/img/port_os.jpg" class="d-block img-fluid rounded shadow mx-auto" alt="My photo"
+                        width="350" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-center">About</h2>
+                    <hr>
+                    <h3 class="text-center">My development path</h3>
+                    <p class="text-center">I started learning programming in 2020 when I had few programming
+                        course on my field of study - Automatics Control and Robotics. At the start I wasn't entirely
+                        convinced about programming
+                        but month to month I started to like it. As a result I started coding on my own and Nowdays
+                        Python
+                        is my main
+                        programming language.</p>
+                    <h3 class="text-center">Hobby</h3>
+                    <p class="text-center">My main hobby is rollerblading. My max distance covered by rollerblades is
+                        100 km
+                    </p>
+                    <p class="text-center"><a href="{{url_for('about')}}">Read more about me...</a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -155,6 +163,41 @@
                     <p>SkLearn, Tensorflow</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <hr>
+        <h2 class="text-center pb-5" id="scrollHeading_4">Links</h2>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" fill="currentColor"
+                    class="bd-placeholder-img rounded-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+                <h2 class="fw-normal">LinkedIn</h2>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" fill="currentColor"
+                    class="bd-placeholder-img rounded-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <h2 class="fw-normal">GitHub</h2>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <svg viewBox="0 0 225 225" width="140" xmlns="http://www.w3.org/2000/svg"
+                    class="bd-placeholder-img rounded-circle" fill="currentColor">
+                    <path
+                        d="M0 112.5V225h225V0H0zm73.8-23.3l.3 13.8H92V75h19v75H92v-28H74.1l-.3 13.7-.3 13.8-9.2.3-9.3.3V74.9l9.3.3 9.2.3zm102.3 23.3v37l-27.6.3-27.5.2V75l27.5.2 27.6.3z" />
+                </svg>
+                <!-- <img src="/static/img/hackerrank-4.svg" alt="HR icon" fill="currentColor"
+                    class="bd-placeholder-img rounded-circle" width="140" /> -->
+                <h2 class="fw-normal">HackerRank</h2>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
         </div>
     </div>
     <hr>
