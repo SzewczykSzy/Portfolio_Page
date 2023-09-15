@@ -16,6 +16,10 @@
 
             /* background-color: red; */
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
@@ -33,7 +37,8 @@
                     <li class="nav-item"><a href="#scrollHeading_2" class="nav-link text-white">Projects</a></li>
                     <li class="nav-item"><a href="#scrollHeading_3" class="nav-link text-white">Skills</a></li>
                     <li class="nav-item"><a href="#scrollHeading_4" class="nav-link text-white">Links</a></li>
-                    <li class="nav-item"><a href="#"><button type="button" class="btn btn-outline-light">CV</button></a>
+                    <li class="nav-item"><a href="../static/pdf/SzymonSzewczyk.pdf" target="_blank"><button
+                                type="button" class="btn btn-outline-light">CV</button></a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +56,13 @@
                     <h2 class="display-5 fw-bold text-center">About</h2>
                     <hr>
                     <h3 class="text-center">My development path</h3>
-                    <p class="text-center">I started learning programming in 2020 when I had few programming
-                        course on my field of study - Automatics Control and Robotics. At the start I wasn't entirely
-                        convinced about programming
-                        but month to month I started to like it. As a result I started coding on my own and Nowdays
-                        Python
-                        is my main
+                    <p class="text-center">I started learning to program in 2020 when I had few programming course on my
+                        field of study - Automatics Control and Robotics. I didn't enjoy programming, but my interest
+                        grew month by month.. As a result, I started coding on my own and nowadays Python is my major
                         programming language.</p>
                     <h3 class="text-center">Hobby</h3>
-                    <p class="text-center">My main hobby is rollerblading. My max distance covered by rollerblades is
-                        100 km
+                    <p class="text-center">My primary hobby is rollerblading. My max distance covered by rollerblades is
+                        100 km.
                     </p>
                     <p class="text-center"><a href="{{url_for('about')}}"><button type="button"
                                 class="btn btn-outline-dark">Read more about me...</button></a></p>
