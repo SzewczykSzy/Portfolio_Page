@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="{{ url_for('home') }}"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-white">
+                    <span class="fs-4">Simon's Portfolio</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#scrollHeading_1" class="nav-link text-white">About Me</a></li>
+                    <li class="nav-item"><a href="#scrollHeading_2" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="#scrollHeading_3" class="nav-link text-white">Skills</a></li>
+                    <li class="nav-item"><a href="#"><button type="button" class="btn btn-outline-light">CV</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container pt-5 text-center">
+        <h1 class="fw-light pb-5">Thesis project</h1>
+        <div class="clearfix px-5 mx-5">
+            <img src="../static/img/OS1.png" class="float-end mb-3 ms-md-3 px-5" alt="os1">
+            <p class="lead text-muted py-2">The goal of this thesis project was to design an algorithm that performs detection 
+                of dangerous situations involving pedestrians on the road. For this problem, 3D point clouds acquired from a 
+                vehicle-mounted LiDAR device (Ouster OS1-128) were used. The OS1-128 is a time-of-flight (ToF) sensor. This means 
+                that it measures distance based on the time-of-flight of a light beam. The device emits light which bounces off 
+                the measured object and returns to it. Using software provided by the Ouster manufacturer, the raw data was 
+                converted to an array representation.
+            </p>
+            <img src="../static/img/conversion_small.png" class="img-fluid float-start mb-3 px-5" alt="arrays">
+            <p class="lead text-muted pt-4">After converting point cloud to array representation, the result image was not natural.
+                If needed to be converted from stagger to destagger. Also it required scaling, because reflective objects and those
+                which emits light on their own, return signal incomparably large relative to other facilities. 
+            </p>
+        </div>
+        <div class="clearfix px-5 mx-5">
+            <img src="../static/img/roboflow-inc-logo-vector_s.png" class="img-fluid float-end mb-3 px-5" alt="roboflow">
+            <p class="lead text-muted pt-4">
+                When the data were transformed correctly, the next step was to create a dataset with annotated pedestrians.
+                To do that I used Roboflow. I have created dataset with about 1300 images, and after augmentation process increased
+                to about 3000 images.
+            </p>
+            <img src="../static/img/yolov8_ss.png" class="img-fluid float-start mb-3 px-5" alt="yolo">
+            <p class="lead text-muted pt-3">
+                To perform pedestrian detection in the images, I have decided to use a pre-trained YOLOv8 convolutional neural network, which 
+                was retrained on the previously created dataset. After the model was ready to use, to perform object tracking I have 
+                used a ByteTrack algorithm, which was provided by Ultralytics with default parameters values.
+            </p>
+            <p class="lead text-muted pt-3">
+                After
+            </p>
+        </div>
+    </div>
+
+    <div class="pt-5 text-center container">
+        <h1 class="fw-light">Thesis project</h1>
+        <div class="container col-xxl-8 px-4 py-1" id="scrollHeading_1">
+            <div class="row align-items-center g-5 pb-3">
+                <div class="col-6 text-center">
+                    <p class="lead text-muted">The goal of this thesis project was to design an algorithm that performs detection 
+                        of dangerous situations involving pedestrians on the road. For this, 3D point clouds acquired from a 
+                        vehicle-mounted LIDAR device (Ouster OS1) were used.</p>
+                        <p>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+                </div>
+                <div class="col-4">
+                    <img src="../static/img/OS1.jpg" alt="os1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-3">
+          <div class="col-lg-10 col-md-1 mx-auto">
+            <h1 class="fw-light">Thesis project</h1>
+            <p class="lead text-muted">The goal of this thesis project was to design an algorithm that performs detection 
+                of dangerous situations involving pedestrians on the road. For this, 3D point clouds acquired from a 
+                vehicle-mounted LIDAR device (Ouster OS1) were used.</p>
+            <img src="../static/img/OS1.jpg" alt="os1">
+                <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    
+    <hr>
+    <footer class="py-3 my-4">
+        <p class="text-center text-body-secondary">© 2024 Copyright by Szymon</p>
+    </footer>
+
+</body>
+
+</html>

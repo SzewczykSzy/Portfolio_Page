@@ -18,6 +18,10 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@app.route('/projects/project_1')
+def project_1():
+    return render_template('project_1.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
