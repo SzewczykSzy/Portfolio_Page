@@ -2,4 +2,4 @@
 
 Technologies: Python, flask, HTML, CSS, Bootstrap
 
-Live: [simon-portfolio-page](https://simon-portfolio-page.vercel.app/)
+Live: [simon-portfolio-page](https://portfolio-page-szewczykszy.vercel.app/)
